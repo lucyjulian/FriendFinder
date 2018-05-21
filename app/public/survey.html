@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
+</head>
+<body>
+    
+  <div class="container">
+
+    <div class="row" id="newFriend">
+        <h1 id="newfriendname"></h1>
+        <img id="newfriendpic">
+    </div>
+
+    <div>
+        <br><br>
+        <h1>Survey Questions</h1>
+        <br>
+        <hr>
+        
+        <form class="friend-form">
+
+            <h2>About You</h2>
+
+            <div class="form-group">
+              <label for="name">Name (Required)</label>
+              <input type="text" id="name" name="" required>
+            </div>
+          
+            <div class="form-group">
+              <label for="photo">Link to Photo Image</label>
+              <input type="text" id="photo" name="" required>
+            </div>
+
+            <hr>
+
+            <h2>Question 1</h2>
+            <div class="form-group">
+                <label for="q1">Your mind is always buzzing with unexplored tastes and sights.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 2</h2>
+            <div class="form-group">
+                <label for="q2">Generally, you prefer doing familiar things to trying new things.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 3</h2>
+            <div class="form-group">
+                <label for="q3">You like bikeriding.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 4</h2>
+            <div class="form-group">
+                <label for="q4">You can sleep outside / go camping without freaking out.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 5</h2>
+            <div class="form-group">
+                <label for="q5">You like chocolate.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 6</h2>
+            <div class="form-group">
+                <label for="q6">You don't mind cats but you also don't really care about cats that much because dogs exist.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 7</h2>
+            <div class="form-group">
+                <label for="q7">Spicy is your friend.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 8</h2>
+            <div class="form-group">
+                <label for="q8">You don't clean as you cook but prefer to leave allllll the dirty dishes to deal with later.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h2>Question 9</h2>
+            <div class="form-group">
+                <label for="q9">You prefer comedies to action movies.</label><br>
+                <select data-placeholder="" class="chosen-select" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <br>
+          
+            <button id="submit" class="btn btn-lg btn-primary" type="submit">Submit and Search!</button>
+          </form>
+    </div>
+
+    <br>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/lucyjulian/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script type="text/javascript">
+    
+    $("#submit").on("click", function(){
+        var newUser = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            answers: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val()]
+        };
+
+        var currentURL = window.location.origin;
+
+        $.post(currentURL + "/api/friends", newUser, function(data){
+            console.log("hello");
+            console.log("survey.html " + data);
+
+            var matchName = data.name;
+            var matchPhoto = data.photo;
+            
+            $("#newFriendName").text(matchName);
+            $("#newfriendpic").attr("src", matchPhoto);
+            // $("#newFriend").append("<h1>Meet your new friend!</h1><br><p>" + matchName + "</p><br><img src='" + matchPhoto + "'>");
+            // location.reload();
+        });
+    
+
+    });
+  
+  </script>
+
+</body>
+</html>
